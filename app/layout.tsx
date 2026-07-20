@@ -46,8 +46,46 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Bocadillo Open Bar",
+    description:
+      "Servicio de bartenders profesionales, barra móvil y open bar para bodas, cumpleaños y eventos corporativos en Lima, Perú.",
+    url: "https://bocadillo-openbar.vercel.app",
+    telephone: "+51-999-999-999",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lima",
+      addressCountry: "PE",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: -12.0464,
+      longitude: -77.0428,
+    },
+    priceRange: "$$",
+    sameAs: [
+      "https://www.instagram.com/bocadillo.openbar/",
+      "https://www.tiktok.com/@bocadillo.openbar1",
+    ],
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
+    },
+  };
+
   return (
     <html lang="es">
+      <head>
+        <meta name="google-site-verification" content="0Q8yd1Y5KldwQhbtXdc5lq6wFaX0AJacZi645f5Gr2Y" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="bg-[#0a0a0a] text-white antialiased">
         {children}
       </body>
