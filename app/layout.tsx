@@ -56,7 +56,7 @@ export default function RootLayout({
     description:
       "Servicio de bartenders profesionales, barra móvil y open bar para bodas, cumpleaños y eventos corporativos en Lima, Perú.",
     url: "https://bocadillo-openbar.vercel.app",
-    telephone: "+51-999-999-999",
+    telephone: "+51-971-416-073",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Lima",
