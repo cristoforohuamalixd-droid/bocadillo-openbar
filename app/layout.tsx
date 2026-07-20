@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  other: {
+    "google-site-verification": "0Q8yd1Y5KldwQhbtXdc5lq6wFaX0AJacZi645f5Gr2Y",
+  },
 };
 
 export default function RootLayout({
@@ -80,7 +83,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <meta name="google-site-verification" content="0Q8yd1Y5KldwQhbtXdc5lq6wFaX0AJacZi645f5Gr2Y" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
