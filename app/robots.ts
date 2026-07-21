@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://bocadillo-openbar.vercel.app/sitemap.xml",
+    sitemap: "https://bocadillo-openbar1.vercel.app/sitemap.xml",
   };
 }

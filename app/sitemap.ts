@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://bocadillo-openbar.vercel.app";
+  const baseUrl = "https://bocadillo-openbar1.vercel.app";
 
   return [
     {
